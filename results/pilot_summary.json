@@ -1,0 +1,33 @@
+{
+  "n": 40,
+  "decision_accuracy": {
+    "cert": 1.0,
+    "control": 0.375,
+    "baseline": 0.25
+  },
+  "answer_correctness_answered_answerable": {
+    "cert": 1.0,
+    "control": 0.2,
+    "baseline": 0.0
+  },
+  "gaps": {
+    "cert_minus_baseline": {
+      "point": 0.75,
+      "ci95": [
+        0.625,
+        0.875
+      ],
+      "B": 10000,
+      "seed": 12345
+    },
+    "cert_minus_control": {
+      "point": 0.625,
+      "ci95": [
+        0.475,
+        0.775
+      ],
+      "B": 10000,
+      "seed": 12345
+    }
+  }
+}

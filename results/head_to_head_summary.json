@@ -1,0 +1,49 @@
+{
+  "n": 200,
+  "seeds": "5000-5199",
+  "kind_mix": {
+    "answerable": 50,
+    "twin_missing": 50,
+    "twin_binding": 50,
+    "entity_soup": 50
+  },
+  "decision_accuracy": {
+    "cert": 1.0,
+    "control": 0.375,
+    "baseline": 0.25
+  },
+  "answer_correctness_answered_answerable": {
+    "cert": {
+      "rate": 1.0,
+      "n": 50
+    },
+    "control": {
+      "rate": 0.16,
+      "n": 50
+    },
+    "baseline": {
+      "rate": 0.0,
+      "n": 50
+    }
+  },
+  "gaps": {
+    "cert_minus_baseline": {
+      "point": 0.75,
+      "ci95": [
+        0.69,
+        0.81
+      ],
+      "B": 10000,
+      "seed": 12345
+    },
+    "cert_minus_control": {
+      "point": 0.625,
+      "ci95": [
+        0.555,
+        0.69
+      ],
+      "B": 10000,
+      "seed": 12345
+    }
+  }
+}
